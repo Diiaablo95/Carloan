@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="735.0" prefWidth="1280.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.controllerSchermate.comuni.ControllerSchermataLogin">
+   <children>
+      <Label layoutX="181.0" layoutY="84.0" style="-fx-font-size: 69px;" text="BENVENUTO SU CARLOAN!" textAlignment="CENTER" textFill="#f09713" AnchorPane.leftAnchor="181.0" AnchorPane.rightAnchor="181.0">
+         <font>
+            <Font size="69.0" />
+         </font>
+      </Label>
+	  <Label fx:id="labelErrore" alignment="CENTER" layoutX="426.0" layoutY="216.0" style="-fx-font-size: 30px;" textAlignment="CENTER" textFill="RED" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="360.0">
+		 <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="campoUtente" alignment="CENTER" focusTraversable="false" layoutX="450.0" layoutY="315.0" promptText="username" styleClass="customFont" AnchorPane.leftAnchor="450.0" AnchorPane.rightAnchor="450.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="campoPassword" alignment="CENTER" focusTraversable="false" layoutX="450.0" layoutY="436.0" promptText="password" styleClass="customFont" AnchorPane.leftAnchor="450.0" AnchorPane.rightAnchor="450.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </PasswordField>
+      <Button focusTraversable="false" layoutX="571.0" layoutY="554.0" mnemonicParsing="false" onMouseClicked="#log" styleClass="customFont" text="Login" textAlignment="CENTER" AnchorPane.leftAnchor="520.0" AnchorPane.rightAnchor="520.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="1005.0" layoutY="593.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <image>
+            <Image url="@../media/Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

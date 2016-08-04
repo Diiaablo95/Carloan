@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="621.0" maxWidth="888.0" minHeight="621.0" minWidth="888.0" prefHeight="621.0" prefWidth="888.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.controllerSchermate.operatore.ControllerSchermataNoleggioOperatore">
+   <children>
+      <VBox maxHeight="621.0" maxWidth="888.0" minHeight="621.0" minWidth="888.0" prefHeight="621.0" prefWidth="888.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxWidth="100.0" minWidth="180.0" prefWidth="100.0" text="ID : " />
+                        <TextField fx:id="campoId" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxWidth="100.0" minWidth="180.0" prefWidth="100.0" text="User cliente:" />
+                        <TextField fx:id="campoUsername" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxWidth="100.0" minWidth="180.0" prefWidth="100.0" text="Targa:" />
+                        <TextField fx:id="campoTarga" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxWidth="100.0" minWidth="180.0" prefWidth="100.0" text="Costo:" />
+                        <TextField fx:id="campoCosto" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxWidth="100.0" minWidth="180.0" prefWidth="100.0" text="Data inizio:" />
+                        <DatePicker fx:id="dataInizialePicker" maxHeight="43.0" maxWidth="250.0" minHeight="43.0" minWidth="250.0" prefHeight="43.0" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxWidth="100.0" minWidth="180.0" prefWidth="100.0" text="Data fine:" />
+                        <DatePicker fx:id="dataFinalePicker" maxHeight="43.0" maxWidth="250.0" minHeight="43.0" minWidth="250.0" prefHeight="43.0" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxWidth="180.0" minWidth="180.0" prefWidth="180.0" text="ID sede iniziale:" />
+                        <TextField fx:id="campoSedeIniziale" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxWidth="100.0" minWidth="180.0" prefWidth="100.0" text="ID sede finale:" />
+                        <TextField fx:id="campoSedeFinale" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label maxWidth="238.0" minWidth="180.0" prefHeight="21.0" prefWidth="238.0" style="-fx-font-size: ;" text="Chilometraggio finale:" />
+                  <TextField fx:id="campoKmFinale" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxWidth="100.0" minWidth="180.0" prefWidth="100.0" text="Chilometraggio:" />
+                        <RadioButton id="limitato" maxWidth="120.0" minWidth="120.0" mnemonicParsing="false" prefWidth="120.0" text="limitato" wrapText="true">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tipoKm" />
+                           </toggleGroup></RadioButton>
+                        <RadioButton id="illimitato" maxWidth="125.0" minWidth="125.0" mnemonicParsing="false" prefWidth="125.0" text="illimitato" toggleGroup="$tipoKm" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Durata:" />
+                        <RadioButton id="giornaliero" maxWidth="160.0" minWidth="160.0" mnemonicParsing="false" prefWidth="160.0" text="Giornaliero" wrapText="true">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="durata" />
+                           </toggleGroup></RadioButton>
+                        <RadioButton id="settimanale" maxWidth="165.0" minWidth="165.0" mnemonicParsing="false" prefWidth="165.0" text="Settimanale" toggleGroup="$durata" wrapText="true" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Button id="bottoneChiudi" mnemonicParsing="false" onMouseClicked="#gestisciNoleggio" styleClass="mainOperation" text="Chiudi" />
+                  <Button id="bottoneModifica" mnemonicParsing="false" onMouseClicked="#gestisciNoleggio" styleClass="mainOperation" text="Modifica" />
+                  <Button id="bottoneElimina" mnemonicParsing="false" onMouseClicked="#gestisciNoleggio" styleClass="mainOperation" text="Elimina" />
+                  <Button id="bottoneVisualizza" mnemonicParsing="false" onMouseClicked="#gestisciNoleggio" styleClass="mainOperation" text="Visualizza" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="621.0" maxWidth="888.0" minHeight="621.0" minWidth="888.0" prefHeight="621.0" prefWidth="888.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.controllerSchermate.operatore.ControllerSchermataChiusuraNoleggio">
+   <children>
+      <VBox alignment="CENTER" maxHeight="621.0" maxWidth="888.0" minHeight="621.0" minWidth="888.0" prefHeight="621.0" prefWidth="888.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="labelIdNoleggio" alignment="CENTER" maxWidth="1280.0" minWidth="1280.0" prefWidth="1280.0" style="-fx-font-size: 60px;" text="Noleggio n°:" />
+            <Label alignment="CENTER" maxWidth="1280.0" minWidth="1280.0" prefWidth="1280.0" style="-fx-font-size: 50px;" text="PREZZO TOTALE:" />
+            <Label fx:id="prezzoNoleggio" alignment="CENTER" maxWidth="1280.0" minWidth="1280.0" prefWidth="1280.0" style="-fx-font-size: 60px;" text="0,00 €" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="60.0">
+               <children>
+                  <Label maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Ammontare danni:">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="totaleDanni" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onMouseClicked="#chiudiNoleggio" styleClass="mainOperation" text="Conferma">
+               <VBox.margin>
+                  <Insets top="70.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

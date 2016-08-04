@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="621.0" maxWidth="888.0" minHeight="621.0" minWidth="888.0" prefHeight="621.0" prefWidth="888.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.controllerSchermate.operatore.ControllerSchermataCliente">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="621.0" prefWidth="888.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="120.0" maxWidth="888.0" minHeight="120.0" minWidth="888.0" prefHeight="120.0" prefWidth="888.0" spacing="50.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxHeight="50.0" maxWidth="150.0" minHeight="50.0" minWidth="150.0" prefHeight="50.0" prefWidth="150.0" text="Username :" />
+                        <TextField fx:id="campoUsername" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxHeight="50.0" maxWidth="150.0" minHeight="50.0" minWidth="150.0" prefHeight="50.0" prefWidth="150.0" text="Password:" />
+                        <TextField fx:id="campoPassword" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" maxHeight="120.0" maxWidth="888.0" minHeight="120.0" minWidth="888.0" prefHeight="120.0" prefWidth="888.0" spacing="50.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxHeight="50.0" maxWidth="150.0" minHeight="50.0" minWidth="150.0" prefHeight="50.0" prefWidth="150.0" text="Nome:" />
+                        <TextField fx:id="campoNome" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxHeight="50.0" maxWidth="150.0" minHeight="50.0" minWidth="150.0" prefHeight="50.0" prefWidth="150.0" text="Cognome:" />
+                        <TextField fx:id="campoCognome" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" maxHeight="120.0" maxWidth="888.0" minHeight="120.0" minWidth="888.0" prefHeight="120.0" prefWidth="888.0" spacing="50.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxHeight="50.0" maxWidth="150.0" minHeight="50.0" minWidth="150.0" prefHeight="50.0" prefWidth="150.0" text="Email:" />
+                        <TextField fx:id="campoEmail" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxHeight="50.0" maxWidth="150.0" minHeight="50.0" minWidth="150.0" prefHeight="50.0" prefWidth="150.0" text="Telefono:" />
+                        <TextField fx:id="campoTelefono" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" maxHeight="120.0" maxWidth="888.0" minHeight="120.0" minWidth="888.0" prefHeight="120.0" prefWidth="888.0" spacing="50.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxHeight="50.0" maxWidth="150.0" minHeight="50.0" minWidth="150.0" prefHeight="50.0" prefWidth="150.0" text="CF:" />
+                        <TextField fx:id="campoCF" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label maxHeight="50.0" maxWidth="150.0" minHeight="50.0" minWidth="150.0" prefHeight="50.0" prefWidth="150.0" text="ID carta:" />
+                        <TextField fx:id="campoCarta" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Button id="bottoneInserisci" mnemonicParsing="false" onMouseClicked="#gestisciCliente" styleClass="mainOperation" text="Inserisci" wrapText="true" />
+                  <Button id="bottoneModifica" mnemonicParsing="false" onMouseClicked="#gestisciCliente" styleClass="mainOperation" text="Modifica" wrapText="true" />
+                  <Button id="bottoneElimina" mnemonicParsing="false" onMouseClicked="#gestisciCliente" styleClass="mainOperation" text="Elimina" wrapText="true" />
+                  <Button id="bottoneVisualizza" mnemonicParsing="false" onMouseClicked="#gestisciCliente" styleClass="mainOperation" text="Visualizza" wrapText="true" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

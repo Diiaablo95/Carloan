@@ -1,0 +1,4 @@
+host		localhost
+db			carloan_db
+user		root
+password	password

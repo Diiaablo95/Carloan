@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="621.0" maxWidth="888.0" minHeight="621.0" minWidth="888.0" prefHeight="621.0" prefWidth="888.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.controllerSchermate.amministratore.ControllerSchermataAutoveicoloDipendente">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="621.0" prefWidth="888.0" spacing="20.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="60.0">
+               <children>
+                  <Label maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Targa :">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="campoTarga" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="60.0">
+               <children>
+                  <Label maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Stato :">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Label>
+                  <VBox maxWidth="588.0" minWidth="588.0" prefHeight="200.0" prefWidth="588.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="588.0" minWidth="588.0" prefHeight="100.0" prefWidth="588.0">
+                           <children>
+                              <RadioButton id="disponibile" maxWidth="250.0" minWidth="250.0" mnemonicParsing="false" onMouseClicked="#gestisciBoxSede" prefWidth="250.0" style="-fx-font-size: 15px;" text="Disponibile" wrapText="true">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="stato" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton id="noleggiato" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#gestisciBoxSede" style="-fx-font-size: 15px;" text="Noleggiato" toggleGroup="$stato" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <RadioButton id="manutenzioneOrdinaria" maxWidth="250.0" minWidth="250.0" mnemonicParsing="false" onMouseClicked="#gestisciBoxSede" prefWidth="250.0" style="-fx-font-size: 15px;" text="Manutenzione ordinaria" toggleGroup="$stato" />
+                              <RadioButton id="manutenzioneStraordinaria" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#gestisciBoxSede" style="-fx-font-size: 15px;" text="Manutenzione straordinaria" toggleGroup="$stato" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="60.0">
+               <children>
+                  <Label maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="ID modello:">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="campoModello" />
+               </children>
+            </HBox>
+            <HBox fx:id="boxSede" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="60.0" visible="false">
+               <children>
+                  <Label maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="ID sede:">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="campoSede" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="70.0" maxWidth="888.0" minHeight="70.0" minWidth="888.0" prefHeight="70.0" prefWidth="888.0" spacing="20.0">
+               <children>
+                  <Button id="bottoneInserisci" maxHeight="60.0" maxWidth="200.0" minHeight="60.0" minWidth="200.0" mnemonicParsing="false" onMouseClicked="#gestisciAutoveicolo" prefHeight="60.0" prefWidth="200.0" styleClass="mainOperation" text="Inserisci" />
+                  <Button id="bottoneModifica" alignment="TOP_CENTER" contentDisplay="TOP" maxHeight="60.0" maxWidth="200.0" minHeight="60.0" minWidth="200.0" mnemonicParsing="false" onMouseClicked="#gestisciAutoveicolo" prefHeight="60.0" prefWidth="200.0" styleClass="mainOperation" text="Modifica" />
+                  <Button id="bottoneElimina" maxHeight="60.0" maxWidth="200.0" minHeight="60.0" minWidth="200.0" mnemonicParsing="false" onMouseClicked="#gestisciAutoveicolo" prefHeight="60.0" prefWidth="200.0" styleClass="mainOperation" text="Elimina" />
+                  <Button id="bottoneRicerca" contentDisplay="TOP" ellipsisString="" maxHeight="65.0" maxWidth="200.0" minHeight="65.0" minWidth="200.0" mnemonicParsing="false" onMouseClicked="#gestisciAutoveicolo" prefHeight="65.0" prefWidth="200.0" styleClass="mainOperation" text="Visualizza" wrapText="true">
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

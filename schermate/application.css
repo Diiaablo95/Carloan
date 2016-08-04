@@ -1,0 +1,27 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+AnchorPane {
+	-fx-background-color : #A4DDFF;
+}
+
+/*Tutte le operazioni possono essere effettuate solo ed esclusivamente utilizzando il puntatore.*/
+AnchorPane * {
+	-fx-focus-traversable: false;
+}
+
+TextField, PasswordField, Button, Label, RadioButton {
+	-fx-font-family : sans-serif;
+	-fx-font-size : 23px;
+}
+
+.mainOperation {
+	-fx-font-size : 35px;
+}
+
+.lightGreyBackground {
+	-fx-background-color : rgba(192, 192, 192, 0.5);
+}
+
+.yellowBackground {
+	-fx-background-color : yellow;
+}
